@@ -1,0 +1,32 @@
+.square {
+	height: 50px;
+	width: 50px;
+}
+
+.table, tr, td {
+	padding: 0px;
+	border-collapse: collapse;
+	 border: 1px solid black;
+
+}
+.table tr {
+	.padding: 0px;
+	.margin: 0px;
+
+}
+.table td {
+	padding: 0px;
+	margin: 0px;
+}
+.btn {
+	margin: 0px;
+	padding: 0px;
+}
+
+.white {
+	background-color: white;
+}
+
+.black {
+	background-color: black;
+}
