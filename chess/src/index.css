@@ -1,6 +1,8 @@
 .square {
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	color: black;
 }
 
 .table, tr, td {
@@ -17,6 +19,7 @@
 .table td {
 	padding: 0px;
 	margin: 0px;
+	text-align: center;
 }
 .btn {
 	margin: 0px;
@@ -29,4 +32,17 @@
 
 .black {
 	background-color: black;
+}
+.history {
+	margin-left: 20px;
+	width: 300px;
+}
+ul li {
+	list-style: none;
+	list-style-type: none;
+	text-align: left;
+}
+
+.Q {
+	
 }
