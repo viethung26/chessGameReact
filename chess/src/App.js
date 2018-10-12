@@ -69,9 +69,11 @@ class App extends Component {
 	onMove(newHis) {
 		const history2 = [];
 		history2.push(newHis);
-		console.log(history2);
 		let {history,current} = this.state;
 		history[++current] = newHis;
+		if(current+1<history.length) {
+			history = history.slice(0,current+1);
+		}
 		this.setState({history,current});
 	}
 
@@ -80,8 +82,9 @@ class App extends Component {
     		<table className="table noborder">
     			<tbody>
     				<tr>
-    					<td><Board history={this.state.history[this.state.current]} turn={this.state.current} onMove={this.onMove}/></td>
-    					<td style={{verticalAlign: "top"}}><History jumpTo={this.jumpTo}/></td>
+    					<td><Board history={this.state.history[this.state.current]} turn={this.state.current} 
+    					onMove={this.onMove}/></td>
+    					<td style={{verticalAlign: "top"}}><History jumpTo={this.jumpTo} turn={this.state.current}/></td>
     				</tr>
     			</tbody>
     			 

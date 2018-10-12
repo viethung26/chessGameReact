@@ -1,6 +1,6 @@
 .square {
-	height: 60px;
-	width: 60px;
+	height: 65px;
+	width: 65px;
 	cursor: pointer;
 	color: black;
 }
@@ -43,6 +43,9 @@ ul li {
 	text-align: left;
 }
 
-.Q {
-	
+.piece { 
+ background-image: url(images/chesspiece.png); 
+ background-position: 0 60px; 
+ width: 60px; 
+ height: 60px;
 }

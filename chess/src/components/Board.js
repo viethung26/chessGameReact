@@ -57,7 +57,6 @@ class Board extends Component {
 		return squares;
 	}
 	render() {	
-		// console.log(this.state.movable);
 		const rows = [];
 			for(let i = 0; i<8; i++) {
 				rows.push(<tr key={i}>{this.setRow(i)}</tr>);
@@ -238,7 +237,6 @@ class Board extends Component {
 					const xnew = X+STEPK[i][0];
 					const ynew = Y+STEPK[i][1];
 					if(xnew<8 && xnew>=0 &&	ynew<8 && ynew>=0 && !this.isInDeadZone(xnew,ynew,PIECE.team)){
-						// console.log("debug"+xnew+" "+ynew);
 						if(board[xnew][ynew]) {
 							if(board[xnew][ynew].team!==PIECE.team) movable.push(new Pos(xnew, ynew));
 						}
@@ -370,8 +368,6 @@ class Board extends Component {
 					break;
 				}
 			}
-		console.log("deadZone was reset");
-		console.log(deadZone);
 		this.setState({deadZone});
 	}
 	isInDeadZone(x,y,team) {

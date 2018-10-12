@@ -10,7 +10,8 @@ class Square extends Component {
 		const style = this.props.isMovable ? {backgroundColor: "red"} :{backgroundColor: this.props.color, opacity};
 		return (
 			<td className="btn square" style={style} onClick={()=>this.handleClick()}
-			><Piece piece={this.props.occupied ? this.props.occupied.name+this.props.occupied.team : null}/></td>
+			><Piece team={this.props.occupied ? this.props.occupied.team: null} 
+			piece={this.props.occupied ? this.props.occupied.name: null}/></td>
 			);
 	}
 }
