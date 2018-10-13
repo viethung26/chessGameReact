@@ -62,7 +62,8 @@ class App extends Component {
 	}
 
 	jumpTo(step) {
-		const current = this.state.current + step;
+		// const current = this.state.current + step;
+		const current = step;
 		if(current>=0 && current<this.state.history.length) this.setState({current});
 	}
 
@@ -84,7 +85,8 @@ class App extends Component {
     				<tr>
     					<td><Board history={this.state.history[this.state.current]} turn={this.state.current} 
     					onMove={this.onMove}/></td>
-    					<td style={{verticalAlign: "top"}}><History jumpTo={this.jumpTo} turn={this.state.current}/></td>
+    					<td style={{verticalAlign: "top"}}><History jumpTo={this.jumpTo} turn={this.state.current} 
+    					size={this.state.history.length}/></td>
     				</tr>
     			</tbody>
     			 

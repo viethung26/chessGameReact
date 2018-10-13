@@ -1,6 +1,7 @@
 .square {
-	height: 65px;
-	width: 65px;
+	text-align: justify;
+	height: 70px;
+	width: 70px;
 	cursor: pointer;
 	color: black;
 }
@@ -21,9 +22,15 @@
 	margin: 0px;
 	text-align: center;
 }
+
 .btn {
-	margin: 0px;
 	padding: 0px;
+	margin: 0px;
+}
+
+.btn2 {
+	width: 99px;
+	margin-right: 2px;
 }
 
 .white {
@@ -38,9 +45,14 @@
 	width: 300px;
 }
 ul li {
+	margin-bottom: 2px;
 	list-style: none;
 	list-style-type: none;
 	text-align: left;
+}
+
+.button {
+	width: 200px;
 }
 
 .piece { 

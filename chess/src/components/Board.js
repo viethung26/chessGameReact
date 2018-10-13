@@ -34,7 +34,9 @@ class Board extends Component {
 	}
 	componentWillReceiveProps(nextProps) {
 		this.reset(nextProps);
+		this.setState({current: null});
 		this.setDeadZone();
+		this.canMove(null);
 	}
 	setRow(row){
 		const {board, movable} = this.state;
@@ -368,6 +370,7 @@ class Board extends Component {
 					break;
 				}
 			}
+		console.log("deadZone was reset");
 		this.setState({deadZone});
 	}
 	isInDeadZone(x,y,team) {
